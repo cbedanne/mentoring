@@ -30,7 +30,8 @@ class CompressListTest {
 		Person person2=new Person("J",40,"B");
 		return Stream.of(new TestCase<>(Arrays.asList(1, 1, 1, 2, 1, 2, 3, 5, 5, 5, 1, 1, 1, 1, 4), 1, 8L),
 						 new TestCase<>(Arrays.asList("toto","titi","abc", "toto", "abc","abc"),"abc",3L),
-						 new TestCase<>(Arrays.asList(person1,person1,person1,person2),person1,3L)
+						 new TestCase<>(Arrays.asList(person1,person1,person1,person2),person1,3L),
+						 new TestCase<>(Arrays.asList(person1,person1,person1,2),2,1L)
 				);
 	}
 
